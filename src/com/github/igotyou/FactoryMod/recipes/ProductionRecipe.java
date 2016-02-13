@@ -65,11 +65,10 @@ public class ProductionRecipe extends InputRecipe {
 		ItemMap toRemove = input.clone();
 		ItemMap toAdd = output.clone();
 		if (toRemove.isContainedIn(i)) {
-			for (ItemStack is : toRemove.getItemStackRepresentation()) {
-				i.removeItem(is);
-			}
-			for (ItemStack is : toAdd.getItemStackRepresentation()) {
-				i.addItem(is);
+			if (InventoryHandling.saveRemoval(i, toRemove)) {
+				for (ItemStack is : toAdd.getItemStackRepresentation()) {
+					i.addItem(is);
+				}
 			}
 		}
 		logAfterRecipeRun(i, f);
