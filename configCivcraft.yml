@@ -2836,11 +2836,11 @@ recipes:
     input:
       diamond ore:
         material: DIAMOND_ORE
-        amount: 20
+        amount: 32
     output:
       diamond:
         material: DIAMOND
-        amount: 24
+        amount: 64
   Extract_Emeralds:
     type: PRODUCTION
     name: Extract Emeralds
@@ -3845,11 +3845,11 @@ recipes:
     output:
       coal:
         material: COAL
-        amount: 80
+        amount: 96
   Smelt_Coal_Ore_Advanced:
     type: PRODUCTION
     name: Smelt Coal Ore Advanced
-    production_time: 30s
+    production_time: 32s
     input:
       coal ore:
         material: COAL_ORE
@@ -3861,7 +3861,7 @@ recipes:
   Smelt_Coal_Ore_Expert:
     type: PRODUCTION
     name: Smelt Coal Ore
-    production_time: 50s
+    production_time: 64s
     input:
       coal ore:
         material: COAL_ORE
@@ -3869,7 +3869,7 @@ recipes:
     output:
       coal:
         material: COAL
-        amount: 640
+        amount: 768
   Smelt_Dark_Prismarine:
     type: PRODUCTION
     name: Smelt Dark Prismarine
@@ -4185,15 +4185,15 @@ recipes:
   Smelt_Stone_Advanced:
     type: PRODUCTION
     name: Smelt Stone
-    production_time: 35s
+    production_time: 18s
     input:
       sobblestone:
         material: COBBLESTONE
-        amount: 256
+        amount: 128
     output:
       stone:
         material: STONE
-        amount: 320
+        amount: 160
   Smelt_Stone_Basic:
     type: PRODUCTION
     name: Smelt Stone
@@ -4637,23 +4637,23 @@ recipes:
         amount: 512
     factory: Flower Gardening
   Upgrade_to_Gem_Extractor:
-    production_time: 4h
+    production_time: 8h
     type: UPGRADE
     name: Upgrade to Gem Extractor
-    fuel_consumption_intervall: 2m
+    fuel_consumption_intervall: 4m
     input:
       diamond:
         material: DIAMOND_BLOCK
-        amount: 64
+        amount: 16
       quartz:
         material: QUARTZ
-        amount: 2048
+        amount: 512
       lapis:
         material: LAPIS_BLOCK
-        amount: 256
+        amount: 64
       redstone:
         material: REDSTONE_BLOCK
-        amount: 256
+        amount: 64
     factory: Gem Extractor
   Upgrade_to_Glass_Dying_Factory:
     production_time: 1h
@@ -4960,13 +4960,13 @@ recipes:
     input:
       iron ingot:
         material: IRON_BLOCK
-        amount: 96
+        amount: 32
       coal:
         material: COAL_BLOCK
-        amount: 192
+        amount: 64
       redstone:
         material: REDSTONE_BLOCK
-        amount: 48
+        amount: 24
     factory: Ore Smelter
   Upgrade_to_Ore_Forge:
     production_time: 4h
